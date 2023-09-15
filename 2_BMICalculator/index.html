@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .inputs {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 2px;
+        margin-top: 10px;
+      }
+
+      button {
+        background: #3695e7;
+        padding: 10px 20px;
+        border: none;
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .weight-guide {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <div class="inputs">
+        <span>Height in CM : <input type="text" /></span>
+        <span>Weight in KG : <input type="text" /></span>
+      </div>
+      <button>Calculate</button>
+
+      <div class="weight-guide">
+        <p><b>Under Weight:</b> Less than 18.6</p>
+        <p><b>Normal Weight:</b> 18.6 and 24.9</p>
+        <p><b>Overweight:</b> Greater than 24.9</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
